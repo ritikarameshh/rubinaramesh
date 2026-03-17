@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rubinaramesh.netlify.app/sitemap.xml
