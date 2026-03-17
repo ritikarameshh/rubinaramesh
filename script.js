@@ -1,18 +1,11 @@
-/* ============================================
-   RUBINA RAMESH — Minimal JavaScript
-   Smooth scroll, nav toggle, fade-in, form
-   ============================================ */
-
 (function () {
   'use strict';
 
-  // ---- Elements ----
   var navbar = document.getElementById('navbar');
   var navToggle = document.getElementById('navToggle');
   var navLinks = document.getElementById('navLinks');
   var navOverlay = document.getElementById('navOverlay');
 
-  // ---- Navbar: scroll effect ----
   function handleScroll() {
     if (window.scrollY > 60) {
       navbar.classList.add('scrolled');
@@ -22,9 +15,8 @@
   }
 
   window.addEventListener('scroll', handleScroll, { passive: true });
-  handleScroll(); // run once on load
+  handleScroll();
 
-  // ---- Mobile nav toggle ----
   function toggleNav() {
     navToggle.classList.toggle('active');
     navLinks.classList.toggle('active');
@@ -42,13 +34,11 @@
   navToggle.addEventListener('click', toggleNav);
   navOverlay.addEventListener('click', closeNav);
 
-  // Close mobile nav when a link is clicked
   var navItems = navLinks.querySelectorAll('a');
   for (var i = 0; i < navItems.length; i++) {
     navItems[i].addEventListener('click', closeNav);
   }
 
-  // ---- Fade-in on scroll (IntersectionObserver) ----
   var fadeEls = document.querySelectorAll('.fade-in');
 
   if ('IntersectionObserver' in window) {
@@ -68,29 +58,40 @@
       observer.observe(el);
     });
   } else {
-    // Fallback: just show everything
     fadeEls.forEach(function (el) {
       el.classList.add('visible');
     });
   }
 
-  // ---- Contact form handler (placeholder) ----
+  var cursorGlow = document.getElementById('cursorGlow');
+
+  if (cursorGlow && window.matchMedia('(pointer: fine)').matches) {
+    document.addEventListener('mousemove', function (e) {
+      cursorGlow.style.left = e.clientX + 'px';
+      cursorGlow.style.top = e.clientY + 'px';
+      if (!cursorGlow.classList.contains('visible')) {
+        cursorGlow.classList.add('visible');
+      }
+    });
+
+    document.addEventListener('mouseleave', function () {
+      cursorGlow.classList.remove('visible');
+    });
+  }
+
   window.handleFormSubmit = function (e) {
     e.preventDefault();
 
     var note = document.getElementById('formNote');
     var form = e.target;
 
-    // Simple feedback — replace with real form handler later
     note.textContent = 'Thank you for your message! Rubina will get back to you soon.';
     note.style.color = '#6B1D3A';
 
-    // Reset form after short delay
     setTimeout(function () {
       form.reset();
     }, 500);
 
-    // Clear message after a few seconds
     setTimeout(function () {
       note.textContent = '';
     }, 5000);

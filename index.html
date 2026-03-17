@@ -8,10 +8,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lora:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
-  <!-- ========== NAVIGATION ========== -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="#" class="nav-logo"><img src="images/Rubina logo.svg" alt="Rubina Ramesh" class="nav-logo-img"></a>
@@ -30,32 +30,28 @@
     </div>
   </nav>
 
-  <!-- Mobile overlay -->
   <div class="nav-overlay" id="navOverlay"></div>
 
-  <!-- ========== HERO ========== -->
   <section class="hero" id="home">
     <div class="hero-overlay"></div>
     <div class="hero-content fade-in">
-      <div class="hero-gold-line"></div>
       <p class="hero-subtitle">Romance Author</p>
       <h1 class="hero-title">Rubina Ramesh</h1>
-      <div class="hero-gold-divider">
-        <span class="gold-diamond">&#9830;</span>
-      </div>
       <p class="hero-tagline">Heartfelt Indian love stories — from feel-good comedies to sweeping royal romances</p>
       <div class="hero-buttons">
         <a href="#books" class="btn btn-primary">Explore My Books</a>
         <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" class="btn btn-secondary">Visit Amazon Store</a>
       </div>
+      <div class="hero-socials">
+        <a href="https://www.goodreads.com/author/show/13831355.Rubina_Ramesh" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.goodreads.com/author/show/13831355.Rubina_Ramesh" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.goodreads.com/author/show/13831355.Rubina_Ramesh" target="_blank" rel="noopener" aria-label="Goodreads"><i class="fa-brands fa-goodreads"></i></a>
+        <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" aria-label="Amazon"><i class="fa-brands fa-amazon"></i></a>
+      </div>
     </div>
-    <div class="hero-scroll">
-      <span>Scroll</span>
-      <div class="scroll-line"></div>
-    </div>
+
   </section>
 
-  <!-- ========== ABOUT ========== -->
   <section class="about" id="about">
     <div class="container">
       <div class="section-header fade-in">
@@ -70,7 +66,6 @@
       <div class="about-grid">
         <div class="about-image fade-in">
           <div class="image-frame">
-            <!-- Replace this div with an <img> tag when you have a photo -->
             <div class="placeholder-photo">
               <span class="placeholder-icon">&#9998;</span>
               <span class="placeholder-text">Author Photo</span>
@@ -94,7 +89,6 @@
     </div>
   </section>
 
-  <!-- ========== GENRE TAGS ========== -->
   <section class="genres">
     <div class="container">
       <div class="genre-tags fade-in">
@@ -113,7 +107,6 @@
     </div>
   </section>
 
-  <!-- ========== BOOKS ========== -->
   <section class="books" id="books">
     <div class="container">
       <div class="section-header fade-in">
@@ -129,121 +122,141 @@
 
       <div class="books-grid">
 
-        <!-- Book 1 -->
         <div class="book-card fade-in">
           <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" class="book-link">
             <div class="book-cover">
-              <div class="placeholder-cover cover-1">
-                <span class="cover-genre">Contemporary Romance</span>
-                <span class="cover-title">Book Title 1</span>
-                <span class="cover-gold-line"></span>
-                <span class="cover-author">Rubina Ramesh</span>
-              </div>
+              <img src="images/book-covers/The Confused Bridegroom - A Romantic Comedy (The Mismatched Couple Book 1).png" alt="The Confused Bridegroom — A Romantic Comedy (The Mismatched Couple Book 1)">
             </div>
             <div class="book-info">
-              <h3 class="book-title">Book Title 1</h3>
-              <p class="book-genre">Contemporary Romance</p>
-              <p class="book-description">A heartfelt story of love, second chances, and finding your way back to the one who matters most.</p>
-              <span class="book-cta">Read on Amazon &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Book 2 -->
-        <div class="book-card fade-in">
-          <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" class="book-link">
-            <div class="book-cover">
-              <div class="placeholder-cover cover-2">
-                <span class="cover-genre">Romantic Comedy</span>
-                <span class="cover-title">Book Title 2</span>
-                <span class="cover-gold-line"></span>
-                <span class="cover-author">Rubina Ramesh</span>
-              </div>
-            </div>
-            <div class="book-info">
-              <h3 class="book-title">Book Title 2</h3>
+              <h3 class="book-title">The Confused Bridegroom</h3>
               <p class="book-genre">Romantic Comedy</p>
-              <p class="book-description">A light-hearted and humorous tale of unexpected love blooming in the most unlikely circumstances.</p>
+              <p class="book-description">A promise made decades ago pulls a young London NRI into the fields of Punjab — where love finds him in the most unexpected way.</p>
               <span class="book-cta">Read on Amazon &rarr;</span>
             </div>
           </a>
         </div>
 
-        <!-- Book 3 -->
         <div class="book-card fade-in">
           <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" class="book-link">
             <div class="book-cover">
-              <div class="placeholder-cover cover-3">
-                <span class="cover-genre">Royal Romance</span>
-                <span class="cover-title">Book Title 3</span>
-                <span class="cover-gold-line"></span>
-                <span class="cover-author">Rubina Ramesh</span>
-              </div>
+              <img src="images/book-covers/The Imperfect Bride - A Romantic Comedy (The Mismatched Couple Book 2).png" alt="The Imperfect Bride — A Romantic Comedy (The Mismatched Couple Book 2)">
             </div>
             <div class="book-info">
-              <h3 class="book-title">Book Title 3</h3>
+              <h3 class="book-title">The Imperfect Bride</h3>
+              <p class="book-genre">Romantic Comedy</p>
+              <p class="book-description">She gave in to every decision that wasn't hers. Now she wants to make one that is — but the heart doesn't always follow the plan.</p>
+              <span class="book-cta">Read on Amazon &rarr;</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="book-card fade-in">
+          <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" class="book-link">
+            <div class="book-cover">
+              <img src="images/book-covers/The Impossible Affair - A Romantic Comedy (The Mismatched Couple Book 3).png" alt="The Impossible Affair — A Romantic Comedy (The Mismatched Couple Book 3)">
+            </div>
+            <div class="book-info">
+              <h3 class="book-title">The Impossible Affair</h3>
+              <p class="book-genre">Romantic Comedy</p>
+              <p class="book-description">She came to India to stop a wedding. She never expected to meet the man who would change her life.</p>
+              <span class="book-cta">Read on Amazon &rarr;</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="book-card fade-in">
+          <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" class="book-link">
+            <div class="book-cover">
+              <img src="images/book-covers/Finding The Angel - An Indian Royal Romance of Love and Betrayal.png" alt="Finding The Angel — An Indian Royal Romance of Love and Betrayal">
+            </div>
+            <div class="book-info">
+              <h3 class="book-title">Finding The Angel</h3>
               <p class="book-genre">Royal Romance</p>
-              <p class="book-description">A sweeping royal love story set in the palaces of India, where duty and desire collide.</p>
+              <p class="book-description">All she wanted was a place to belong. All he wanted was a reason to trust. One stolen treasure threatens to destroy them both.</p>
               <span class="book-cta">Read on Amazon &rarr;</span>
             </div>
           </a>
         </div>
 
-        <!-- Book 4 -->
         <div class="book-card fade-in">
           <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" class="book-link">
             <div class="book-cover">
-              <div class="placeholder-cover cover-4">
-                <span class="cover-genre">Historical Romance</span>
-                <span class="cover-title">Book Title 4</span>
-                <span class="cover-gold-line"></span>
-                <span class="cover-author">Rubina Ramesh</span>
-              </div>
+              <img src="images/book-covers/A Dangerous Affair - A Forbidden Love Story in British India.png" alt="A Dangerous Affair — A Forbidden Love Story in British India">
             </div>
             <div class="book-info">
-              <h3 class="book-title">Book Title 4</h3>
+              <h3 class="book-title">A Dangerous Affair</h3>
               <p class="book-genre">Historical Romance</p>
-              <p class="book-description">A timeless love story shaped by destiny, set against the rich tapestry of India's past.</p>
+              <p class="book-description">India, 1947. A nation burns in the fires of freedom — and two hearts from different worlds are about to collide.</p>
               <span class="book-cta">Read on Amazon &rarr;</span>
             </div>
           </a>
         </div>
 
-        <!-- Book 5 -->
         <div class="book-card fade-in">
           <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" class="book-link">
             <div class="book-cover">
-              <div class="placeholder-cover cover-5">
-                <span class="cover-genre">Second-Chance Romance</span>
-                <span class="cover-title">Book Title 5</span>
-                <span class="cover-gold-line"></span>
-                <span class="cover-author">Rubina Ramesh</span>
-              </div>
+              <img src="images/book-covers/Lolita - A Hot Indian Romance.png" alt="Lolita — A Hot Indian Romance">
             </div>
             <div class="book-info">
-              <h3 class="book-title">Book Title 5</h3>
-              <p class="book-genre">Second-Chance Romance</p>
-              <p class="book-description">Sometimes love needs a second chance to get it right — a story of healing, resilience, and reunion.</p>
-              <span class="book-cta">Read on Amazon &rarr;</span>
-            </div>
-          </a>
-        </div>
-
-        <!-- Book 6 -->
-        <div class="book-card fade-in">
-          <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" class="book-link">
-            <div class="book-cover">
-              <div class="placeholder-cover cover-6">
-                <span class="cover-genre">Contemporary Romance</span>
-                <span class="cover-title">Book Title 6</span>
-                <span class="cover-gold-line"></span>
-                <span class="cover-author">Rubina Ramesh</span>
-              </div>
-            </div>
-            <div class="book-info">
-              <h3 class="book-title">Book Title 6</h3>
+              <h3 class="book-title">Lolita</h3>
               <p class="book-genre">Contemporary Romance</p>
-              <p class="book-description">A modern love story rooted in Indian culture, exploring the quiet strength of love that endures.</p>
+              <p class="book-description">Love or stardom? What Lolita wanted and what she got were two different things. A chance accident changes everything.</p>
+              <span class="book-cta">Read on Amazon &rarr;</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="book-card fade-in">
+          <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" class="book-link">
+            <div class="book-cover">
+              <img src="images/book-covers/Destined: Marriage of Convenience | Emotional Indian Romance.png" alt="Destined — Marriage of Convenience | Emotional Indian Romance">
+            </div>
+            <div class="book-info">
+              <h3 class="book-title">Destined</h3>
+              <p class="book-genre">Contemporary Romance</p>
+              <p class="book-description">A marriage meant to last six months. Two broken hearts. And a destiny that refuses to let go.</p>
+              <span class="book-cta">Read on Amazon &rarr;</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="book-card fade-in">
+          <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" class="book-link">
+            <div class="book-cover">
+              <img src="images/book-covers/Homecoming - Forget Me Not - A Second Chance Romance.png" alt="Homecoming: Forget Me Not — A Second Chance Romance">
+            </div>
+            <div class="book-info">
+              <h3 class="book-title">Homecoming: Forget Me Not</h3>
+              <p class="book-genre">Second-Chance Romance</p>
+              <p class="book-description">She still searches for happiness. He doesn't even remember her. When fate offers a second chance, will love survive the truth?</p>
+              <span class="book-cta">Read on Amazon &rarr;</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="book-card fade-in">
+          <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" class="book-link">
+            <div class="book-cover">
+              <img src="images/book-covers/Homecoming - Will You Be Mine - A Second Chance Romance.png" alt="Homecoming: Will You Be Mine? — A Second Chance Romance">
+            </div>
+            <div class="book-info">
+              <h3 class="book-title">Homecoming: Will You Be Mine?</h3>
+              <p class="book-genre">Second-Chance Romance</p>
+              <p class="book-description">Nine years apart. Buried secrets. The love they once shared might heal them — or destroy them forever.</p>
+              <span class="book-cta">Read on Amazon &rarr;</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="book-card fade-in">
+          <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" class="book-link">
+            <div class="book-cover">
+              <img src="images/book-covers/Knitted Tales - Psychological and Horror Short Stories.png" alt="Knitted Tales — Psychological and Horror Short Stories">
+            </div>
+            <div class="book-info">
+              <h3 class="book-title">Knitted Tales</h3>
+              <p class="book-genre">Psychological &amp; Horror</p>
+              <p class="book-description">A collection of emotions that touches both the head and the heart — where the questions are from the soul and the answers are never simple.</p>
               <span class="book-cta">Read on Amazon &rarr;</span>
             </div>
           </a>
@@ -253,7 +266,6 @@
     </div>
   </section>
 
-  <!-- ========== KINDLE UNLIMITED BANNER ========== -->
   <section class="kindle-banner" id="kindle">
     <div class="container">
       <div class="kindle-content fade-in">
@@ -269,7 +281,6 @@
     </div>
   </section>
 
-  <!-- ========== TESTIMONIAL / QUOTE ========== -->
   <section class="quote-section">
     <div class="container">
       <blockquote class="author-quote fade-in">
@@ -291,7 +302,6 @@
     </div>
   </section>
 
-  <!-- ========== CONTACT ========== -->
   <section class="contact" id="contact">
     <div class="container">
       <div class="section-header fade-in">
@@ -307,21 +317,21 @@
         <div class="contact-text fade-in">
           <p>Whether you're a fellow reader, a book blogger, or just want to say hello — I'd love to hear from you.</p>
           <div class="social-links">
-            <a href="#" class="social-link" aria-label="Instagram">
-              <span class="social-icon">&#9830;</span> Instagram
+            <a href="https://www.goodreads.com/author/show/13831355.Rubina_Ramesh" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i> Instagram
             </a>
-            <a href="#" class="social-link" aria-label="Facebook">
-              <span class="social-icon">&#9830;</span> Facebook
+            <a href="https://www.goodreads.com/author/show/13831355.Rubina_Ramesh" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+              <i class="fa-brands fa-facebook"></i> Facebook
             </a>
-            <a href="#" class="social-link" aria-label="Goodreads">
-              <span class="social-icon">&#9830;</span> Goodreads
+            <a href="https://www.goodreads.com/author/show/13831355.Rubina_Ramesh" target="_blank" rel="noopener" class="social-link" aria-label="Goodreads">
+              <i class="fa-brands fa-goodreads"></i> Goodreads
             </a>
             <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" class="social-link" aria-label="Amazon">
-              <span class="social-icon">&#9830;</span> Amazon
+              <i class="fa-brands fa-amazon"></i> Amazon
             </a>
           </div>
         </div>
-        <form class="contact-form fade-in" onsubmit="handleFormSubmit(event)">
+        <form class="contact-form fade-in" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
           <div class="form-group">
             <label for="name">Your Name</label>
             <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -341,7 +351,6 @@
     </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="footer-gold-line"></div>
     <div class="container">
@@ -359,11 +368,18 @@
           <span class="footer-dot">&#9830;</span>
           <a href="#contact">Contact</a>
         </div>
+        <div class="footer-socials">
+          <a href="https://www.goodreads.com/author/show/13831355.Rubina_Ramesh" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.goodreads.com/author/show/13831355.Rubina_Ramesh" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.goodreads.com/author/show/13831355.Rubina_Ramesh" target="_blank" rel="noopener" aria-label="Goodreads"><i class="fa-brands fa-goodreads"></i></a>
+          <a href="https://www.amazon.com/stores/Rubina-Ramesh/author/B01MA2WNJE" target="_blank" rel="noopener" aria-label="Amazon"><i class="fa-brands fa-amazon"></i></a>
+        </div>
         <p class="footer-copy">&copy; 2026 Rubina Ramesh. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
+  <div class="cursor-glow" id="cursorGlow"></div>
   <script src="script.js"></script>
 </body>
 </html>
